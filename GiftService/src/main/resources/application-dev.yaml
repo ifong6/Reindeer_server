@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/reindeers_db?serverTimezone=UTC
+    password: ${MYSQL_PASSWORD}
+  rabbitmq:
+    host: localhost
+    username: ${RABBITMQ_USERNAME}
+    password: ${RABBITMQ_PASSWORD}
+  data:
+    redis:
+      url: redis://${REDIS_PASSWORD}@127.0.0.1:6379
+UserService:
+  UserInfoUrl: http://localhost:8082/api/user/user-public-info/

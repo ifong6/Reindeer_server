@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: idgenerator-deployment
+  namespace: microservices
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: idgenerator
+  template:
+    metadata:
+      labels:
+        app: idgenerator
+    spec:
+      containers:
+        - name: idgenerator
+          image: qu9972/idgenerator:latest
+          ports:
+            - containerPort: 8081

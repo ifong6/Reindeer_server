@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: GiftService
+  datasource:
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  profiles:
+    active: dev
+  data:
+    redis:
+      port: 6379
+  rabbitmq:
+    port: 5672
+
+server:
+  port: 8083

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: IdGeneratorService
+  datasource:
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  profiles:
+    active: dev
+  data:
+    redis:
+      port: 6379
+server:
+  port: 8081

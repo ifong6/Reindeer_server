@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: UserService
+  profiles:
+    active: dev
+  datasource:
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+  rabbitmq:
+    port: 5672
+
+server:
+  port: 8082

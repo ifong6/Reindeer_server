@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    url: jdbc:mysql://reindeers-rds-instance.c3aoemok4bfc.us-west-2.rds.amazonaws.com/reindeers_db?serverTimezone=UTC
+    password: reindeers
+  rabbitmq:
+    host: 10.1.0.33
+    username: jackie
+    password: 56199662
